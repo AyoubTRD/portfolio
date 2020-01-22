@@ -1,0 +1,38 @@
+.logo img {
+  height: 40px;
+  width: 40px;
+}
+
+#home {
+  background: url("../assets/bg.jpg");
+  background-position: bottom !important;
+  background-size: cover;
+}
+
+.icon svg,
+.icon img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.icon svg {
+  transform: translateY(10px);
+}
+
+.project-view {
+  transition: 0.25s 0.2s;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 18px;
+  margin: 3px 4px;
+  transform: scale(0.6);
+  opacity: 0;
+}
+
+.portfolio-items .item:hover .project-view {
+  opacity: 1;
+  transform: scale(1);
+}
