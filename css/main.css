@@ -103,10 +103,17 @@
   max-height: 90vh;
 }
 
+@media all and (max-width: 500px) {
+  .details-inner {
+    max-height: 100vh;
+    padding: 23px 20px;
+  }
+}
+
 .details-inner .buttons {
   margin-top: 20px;
   text-align: right;
-  transform: translate(25px, 20px);
+  transform: translateX(25px);
 }
 
 .details-inner .buttons a:visited,
@@ -116,6 +123,10 @@
 
 .details-inner .buttons a:hover {
   color: #222;
+}
+
+.details .buttons a {
+  margin: 10px;
 }
 
 .details-show {
