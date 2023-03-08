@@ -1,3 +1,6 @@
+const whiteLogoPath = "/assets/Portfolio-Logo-white.png"
+const blackLogoPath = "/assets/Portfolio-Logo-black.png"
+
 $(window).on("load", function() {
   (setTimeout(function() {
     $(".preloader").addClass("loaded");
@@ -34,7 +37,14 @@ $(window).on("load", function() {
       t.on("scroll", function() {
         var o = t.scrollTop(),
           a = $(".navbar");
-        o > 300 ? a.addClass("fixed-top") : a.removeClass("fixed-top");
+          if (o > 300) {
+            a.addClass("fixed-top")
+            document.querySelector(".logo img").setAttribute("src", blackLogoPath)
+          }
+          else {
+            a.removeClass("fixed-top");
+            document.querySelector(".logo img").setAttribute("src", whiteLogoPath)
+          }
       }),
       (function() {
         if ($("section.stats").length > 0) {
