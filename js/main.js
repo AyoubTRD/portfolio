@@ -1,6 +1,8 @@
 const whiteLogoPath = "/assets/Portfolio-Logo-white.png"
 const blackLogoPath = "/assets/Portfolio-Logo-black.png"
 
+window.location.replace("https://ayoubtrd.com")
+
 $(window).on("load", function() {
   (setTimeout(function() {
     $(".preloader").addClass("loaded");
